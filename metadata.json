@@ -1,0 +1,5 @@
+{
+  "name": "Tessera",
+  "description": "Transform medical readings into interactive USMLE Step 1 & 2 preparation lessons with high-yield clinical vignettes and board-style questions.",
+  "requestFramePermissions": []
+}

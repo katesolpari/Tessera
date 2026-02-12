@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tessera | Clinical Precision</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --surface: #F9FAFB;
+            --ink: #0F172A;
+            --focus-blue: #2563EB;
+            --accent-blue: #475569;
+            --border-crisp: #E2E8F0;
+            --white: #FFFFFF;
+        }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--surface);
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+            background-image: 
+                radial-gradient(circle at 100% 0%, #E0F2FE 0%, transparent 40%),
+                radial-gradient(circle at 0% 100%, #F1F5F9 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        .serif-heading { 
+            font-family: 'Playfair Display', serif; 
+            letter-spacing: -0.015em;
+            line-height: 1.1;
+        }
+
+        .mono-data { 
+            font-family: 'JetBrains Mono', monospace; 
+            letter-spacing: -0.02em;
+        }
+        
+        .precision-card {
+            background: var(--white);
+            border: 1px solid var(--border-crisp);
+            box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03), 0 10px 40px -10px rgba(15, 23, 42, 0.04);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .wide-nav {
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-size: 0.625rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+        }
+
+        .italic-display {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .btn-focus {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-size: 0.65rem;
+            font-weight: 900;
+        }
+        
+        .btn-focus:hover {
+            letter-spacing: 0.3em;
+            background-color: var(--ink);
+            transform: translateY(-1px);
+            box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.2);
+        }
+
+        /* Sophisticated Scrollbar */
+        ::-webkit-scrollbar { width: 3px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--focus-blue); }
+
+        .mosaic-tile {
+            filter: drop-shadow(0 4px 8px rgba(15, 23, 42, 0.1));
+        }
+
+        .pearl-content {
+            font-family: 'Playfair Display', serif;
+            line-height: 1.4;
+            letter-spacing: -0.01em;
+        }
+
+        section h3 {
+            border-bottom: 1px solid var(--border-crisp);
+            padding-bottom: 1rem;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
